@@ -46,15 +46,15 @@ defmodule Playwright.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:cowlib, "~> 2.7.0"},
+      {:cowlib, "~> 2.12.1"},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.1", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.25", only: :dev, runtime: false},
       {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},
-      {:gun, "~> 1.3.3"},
+      {:gun, "~> 2.0.1"},
       {:jason, "~> 1.2"},
       {:mix_audit, "~> 1.0", only: [:dev, :test], runtime: false},
-      {:playwright_assets, "~> 1.32.0", only: [:test]},
+      # {:playwright_assets, git: "https://github.com/korczis/playwright-assets.git", only: [:test]},
       {:recase, "~> 0.7"},
       {:uuid, "~> 1.1"}
     ]
